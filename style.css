@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "simpsonsfont";
+    src: url("./font/Simpsonfont.otf") format("opentype");
+}
+.titulo__programa{
+    font-family:"simpsonfont";
+    color:#FFD90F;
+    font-weight: bolder;
+    font-size: 100px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    margin: auto;
+    text-align: center;
+    margin-right: 700px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.titulo__programa:hover{
+    background-color: #39f8;
+    border-radius: 50px;
+}
+.fondo__fondo{
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("https://www.shutterstock.com/image-vector/cartoon-blue-sky-wish-clouds-260nw-1523835050.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+::placeholder{
+    font-family:"simpsonfont";
+    color: #FFD90F;
+    -webkit-text-stroke: .4px black;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+button{
+    font-family:"simpsonfont";
+    color: #FFD90F;
+    -webkit-text-stroke: .4px black;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+}
+.fondo__pagina{
+    margin: 20px;
+    background-color: #f0f0f0a1;
+    color: #333;
+    margin: auto;
+    height: auto;
+    max-width: 85%;
+    box-shadow: 0 0 20px #39f8;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fondo__pagina:hover{
+    background-color: #f0f0f0cc;
+}
+.interactuables{
+    border: 1px solid #39f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.interactuables:hover{
+    border: #39f;
+    background-color: #39f3;
+    color: #aa9209;
+}
+.interactuables:focus{
+    outline: #39f8;
+    background-color: #39f3;
+}
+#contenedorpersonajes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+.personaje_card {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #39f8;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  min-height: 320px;
+}
+.personaje_card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #222;
+  height: 200px;
+  object-fit: cover;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 5px #39f8;
+}
+
+
+.fav-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: grey;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.fav-btn.active {
+  color: gold;
+}
